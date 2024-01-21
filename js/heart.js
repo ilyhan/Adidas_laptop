@@ -1,13 +1,28 @@
 //активация сердечек при добавлении в избранное
 let nav_herts =  document.querySelector('img[alt="heart-nav"]');
-
 document.addEventListener("click", function(event)
 {
 
   if(event.target.alt == "heart"){
     event.target.classList.toggle("cart-active-heart");
-    hearts = document.querySelector(".cart-active-heart")+1;
-  //  nav_herts.classList.add("cart-active-heart");
+    const card = event.target.closest('.cart');
+
+    const productInfo = {
+      imgSrc: card.querySelector('.img').getAttribute('src'),
+      price: card.querySelector('.price-shoes').innerText,
+      name: card.querySelector('h3').innerText,
+    }
+
+
+
+  
+
+
+
+
+
+
+    let hearts = document.querySelector(".cart-active-heart")+1;
     if(hearts.length){
       nav_herts.src = "img/active-heart.png";
     }
@@ -16,6 +31,15 @@ document.addEventListener("click", function(event)
     }
 }
 });
+let hearts = document.querySelector(".cart-active-heart")+1;
+if(hearts.length){
+  nav_herts.src = "img/active-heart.png";
+}
+else{
+  nav_herts.src = "img/heart.png";
+}
+
+
 
 
 //появление и удаление навигации при прокрутке
