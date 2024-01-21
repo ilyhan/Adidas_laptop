@@ -1,4 +1,4 @@
-//активация сердечек при добавлении в избранное 
+//активация сердечек при добавлении в избранное
 let nav_herts =  document.querySelector('img[alt="heart-nav"]');
 
 document.addEventListener("click", function(event)
@@ -16,6 +16,7 @@ document.addEventListener("click", function(event)
     }
 }
 });
+
 
 //появление и удаление навигации при прокрутке
 let nav =  document.querySelector(".fixed");
