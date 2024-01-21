@@ -1,0 +1,142 @@
+.sale_banner{
+  margin-top: 70px;
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(225deg,#f4d03f,rgba(255, 0, 0, 0) 70.71%),
+              linear-gradient(127deg, #C71585, rgba(0, 255, 0, 0) 70.71%),
+              linear-gradient(200deg, #B22222, rgba(250, 0, 0, 0.4) 70.71%);
+  overflow: hidden;
+}
+
+.category_sale{
+  width: 40%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+
+.big_sale{
+  position: absolute;
+  left: 45vw;
+  top: 0vh;
+  width: 47vw;
+  margin-right: 100px;
+}
+
+.border_left{
+  height: 10.5vh;
+  border-left: 0.15vw solid #ffffff;
+}
+
+.sale_info{
+  position: relative;
+  height: 69vh;
+  font-size: 12vh;
+  font-weight: 400;
+  border: 0.15vw solid #ffffff;
+  color: #ffffff;
+}
+
+.border_right{
+  height: 10.4vh;
+  border-right: 0.15vw solid #ffffff;
+}
+
+.under_btn{
+  position: relative;
+  border: 1px solid #ffffff;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.under_btn a{
+  margin-top: 1px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 40px;
+  background-color: #ffffff;
+  position: absolute;
+  transition:  0.2s ease;
+  top: -3px;
+  left: -2px;
+}
+
+.under_btn a img {
+  align-self: center;
+}
+
+.under_btn a p{
+  align-self: center;
+  padding-left: 10px;
+}
+
+.under_btn a:active{
+  transition:  0.2s ease;
+  top: -1px;
+  left: 0px;
+  .nav{
+    display: none;
+  }
+}
+
+.under_btn_men{
+  width: 150px;
+}
+
+.under_btn_women{
+  width: 180px;
+}
+
+.under_btn_kids{
+  width: 152px;
+}
+
+header a:hover{
+  color: #777777;
+}
+
+.up{
+  position: absolute;
+  left: 5vh;
+  top: 4vh;
+}
+.sixten{
+  position: absolute;
+  left: 5vh;
+  top: 14vh;
+  font-size: 40vh;
+}
+
+.prochent{
+  font-size: 20vh;
+  position: absolute;
+  top: 17vh;
+  left: 50vh;
+}
+
+.off{
+  position: absolute;
+  font-size: 22vh;
+  top: 30vh;
+  left: 50vh;
+}
+
+.tons{
+  position: absolute;
+  top: 50vh;
+  left: 12vh;
+}

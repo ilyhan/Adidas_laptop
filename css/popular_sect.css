@@ -1,0 +1,43 @@
+
+.popular-sections{
+  margin-top: 80px;
+}
+
+.popular-sections h3{
+  font-weight: 600;
+  font-size: 36px;
+}
+
+
+.popular-sections-links{
+  display: grid;
+  width: 100%;
+  column-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 800px){
+  .popular-sections-links{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.popular-sections-links div{
+  margin-top: 60px;
+  max-width: 535px;
+  min-width: 100px;
+  border-bottom: 5px solid rgba(0,0,0,0);
+}
+
+.popular-sections-links div a{
+  display: block;
+  font-weight: 700;
+  font-size: 40px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+.popular-sections-links div:hover{
+  border-bottom: 5px solid black;
+}
