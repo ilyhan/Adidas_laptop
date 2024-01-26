@@ -7,7 +7,7 @@
 .info-block{
   margin-top: 30px;
   max-width: 800px;
-  min-width: 600px;
+  min-width: 400px;
 }
 
 
@@ -46,4 +46,20 @@
 .sign-up h2{
   font-weight: 700;
   font-size: 32px;
+}
+
+@media (max-width: 900px){
+  .info-blocks{
+    display: block;
+  }
+  .info-block:first-child{
+      padding-top: 30px;
+  }
+  .info-block{
+    width: 90vw;
+  }
+
+  .info-block p:last-child{
+    padding-bottom: 30px;
+  }
 }

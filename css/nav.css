@@ -5,7 +5,7 @@
 }
 
 .container{
-  width: 1830px;
+  width: 1800px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -26,6 +26,12 @@
   display: grid;
   background-color: #ffffff;
   grid-template-columns: 23% auto 23%;
+}
+
+@media (max-width:1500px){
+  .nav{
+    grid-template-columns: 2% auto 37%;
+  }
 }
 
 .logo{

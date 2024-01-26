@@ -2,6 +2,7 @@
   margin-top: 70px;
   position: relative;
   height: 90vh;
+  width: 100vw;
   background: linear-gradient(225deg,#f4d03f,rgba(255, 0, 0, 0) 70.71%),
               linear-gradient(127deg, #C71585, rgba(0, 255, 0, 0) 70.71%),
               linear-gradient(200deg, #B22222, rgba(250, 0, 0, 0.4) 70.71%);
@@ -14,7 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 150px;
+  padding-left: 5vw;
 }
 
 .category_sale h1 {

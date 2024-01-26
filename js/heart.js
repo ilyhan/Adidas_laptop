@@ -42,19 +42,36 @@ let f = function(e){
 nav_herts.addEventListener('click', f);
 
 
+
+
 let wishlist = document.querySelector('.wishlist-elem');
 if(wishlist){
   arrayWishlist = JSON.parse(localStorage.getItem('wishlist'));
   arrayWishlist.forEach((item, i) => {
-    let s = `<a href='#!' class='cart' id='card-01'>
-      <img  src="${item.img}" alt="" height="280">
+    let s = `<a href='#!' class='cart cart-fav' id='card-01'>
+      <img class="img" src="${item.img}" alt="" height="280">
       <h3>Originals White Forum Low x The Grinch Shoes</h3>
       <span class="price-shoes">$130</span>
       <button class="cart-heart cart-active-heart" id="01">
-        <img src="img/heart.png" alt="heart" height="15">
+        <img src="img/active-heart.png" alt="heart" height="15">
       </button>
     </a>`;
-    wishlist.insertAdjacentHTML("beforeend", s);
+    if(i<2){
+      wishlist.insertAdjacentHTML("afterbegin", s);
+    }else{
+      wishlist.insertAdjacentHTML("beforeend", s);
+    }
   });
+  let hearts = document.querySelectorAll(".cart-fav");
+  console.log(hearts);
 
+  if(hearts.length){
+    wishlist.insertAdjacentHTML("beforebegin", `<br>${hearts.length} ITEMS <br>`);
+    nav_herts.src = "img/active-heart.png";
+  }
+  else{
+    console.log(hearts.length);
+    wishlist.insertAdjacentHTML("beforeend", "<br>0 ITEMS <br> You haven't saved any items to your wishlist yet. Start shopping and add your favorite items to your wishlist.");
+    nav_herts.src = "img/heart.png";
+  }
 }
