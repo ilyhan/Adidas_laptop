@@ -2,6 +2,7 @@
 let nav_herts =  document.querySelector('img[alt="heart-nav"]');
 const active_heart = function(event){
   if(event.target.alt == "heart"){
+    event.preventDefault();
     event.target.classList.toggle("cart-active-heart");
     let hearts = document.querySelector(".cart-active-heart")+1;
     if(hearts.length){
@@ -47,6 +48,13 @@ nav_herts.addEventListener('click', f);
 let wishlist = document.querySelector('.wishlist-elem');
 if(wishlist){
   arrayWishlist = JSON.parse(localStorage.getItem('wishlist'));
+
+  //убираем блок с присоединем к форуму(для незабывания лайкнутых товаров)
+  if(arrayWishlist.length){
+    document.querySelector('.join-club').classList.remove('none_block');
+    console.log("12344");
+  }
+
   arrayWishlist.forEach((item, i) => {
     let s = `<a href='#!' class='cart cart-fav' id='card-01'>
       <img class="img" src="${item.img}" alt="" height="280">
@@ -75,3 +83,45 @@ if(wishlist){
     nav_herts.src = "img/heart.png";
   }
 }
+
+
+//получение артикула для перехода на страничку товара
+let clickCart = function (event) {
+  if(event.target.alt != "heart"){
+  localStorage.setItem('cart', JSON.stringify(event.target.closest('.cart').dataset.articule));
+  console.log(JSON.parse(localStorage.getItem('cart')));
+  document.removeEventListener('click', clickCart);
+}
+}
+document.addEventListener('click',clickCart);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//скрипт для другого файла(просто попоробовать)
+
+// let imgPrd = document.querySelector('.product-img');
+//
+// imgPrd.addEventListener('click', (event)=>{
+//   if(event.target.tagName=="IMG"){
+//   event.target.style = "transform: scale(3);";
+//
+// }
+// })
+//
+// imgPrd.addEventListener('mousemove',(e)=>{
+//   if(event.target.tagName=="IMG"){
+//   e.target.style = `transform: translateX(${200-e.clientX}px) translateY(${200-e.clientY}px) scale(2);`;
+// }
+// });
