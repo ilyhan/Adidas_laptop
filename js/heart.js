@@ -94,34 +94,3 @@ let clickCart = function (event) {
 }
 }
 document.addEventListener('click',clickCart);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//скрипт для другого файла(просто попоробовать)
-
-// let imgPrd = document.querySelector('.product-img');
-//
-// imgPrd.addEventListener('click', (event)=>{
-//   if(event.target.tagName=="IMG"){
-//   event.target.style = "transform: scale(3);";
-//
-// }
-// })
-//
-// imgPrd.addEventListener('mousemove',(e)=>{
-//   if(event.target.tagName=="IMG"){
-//   e.target.style = `transform: translateX(${200-e.clientX}px) translateY(${200-e.clientY}px) scale(2);`;
-// }
-// });

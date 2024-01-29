@@ -19,6 +19,7 @@
 }
 
 .product-img img {
+  transition: scale(2) 2s ease;
   width: 100%;
 }
 

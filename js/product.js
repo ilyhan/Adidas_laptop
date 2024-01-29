@@ -26,3 +26,27 @@ let productDescr = document.querySelector('.product-description');
 productDescr.querySelector('span').innerText = productsDB[cart].type;
 productDescr.querySelector('h1').innerText = productsDB[cart].name;
 productDescr.querySelectorAll('span')[1].innerText = productsDB[cart].price;
+
+
+
+
+//скрипт для другого файла(просто попоробовать)
+
+let imgPrd = document.querySelector('.product-img');
+
+let c = function(e, x, y){
+  e.target.style = `transform: translateX(${x-e.clientX}px) translateY(${y-e.clientY}px) scale(2.2);`;
+}
+
+imgPrd.addEventListener('click', (event)=>{
+  if(event.target.tagName=="IMG"){
+  event.target.style = `transform: scale(2.2);`;
+  event.target.addEventListener('mousemove',function(e){
+    c(e, event.clientX, event.clientY);    
+  });
+  event.target.addEventListener('mouseleave',(ev)=>{
+    event.target.style = `transform: translate(0px) scale(1);`;
+  });
+  // event.target.style = `transform: translateX(0px) translateY(0px) scale(1);`;
+}
+})
