@@ -36,13 +36,15 @@ let imgPrd = document.querySelector('.product-img');
 
 let c = function(e, x, y){
   e.target.style = `transform: translateX(${x-e.clientX}px) translateY(${y-e.clientY}px) scale(2.2);`;
+  console.log(e);
 }
 
 imgPrd.addEventListener('click', (event)=>{
   if(event.target.tagName=="IMG"){
   event.target.style = `transform: scale(2.2);`;
+  console.log(event);
   event.target.addEventListener('mousemove',function(e){
-    c(e, event.clientX, event.clientY);    
+    c(e, event.clientX, event.clientY);
   });
   event.target.addEventListener('mouseleave',(ev)=>{
     event.target.style = `transform: translate(0px) scale(1);`;
