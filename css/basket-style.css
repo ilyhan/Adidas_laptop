@@ -153,3 +153,21 @@
   letter-spacing: 2px;
   margin-bottom: 7px;
 }
+
+.promo-code{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.promo-code img{
+  transform: translateY(10px);
+}
+
+.promo-code span{
+  margin-left: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1.5px solid black;
+}

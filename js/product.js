@@ -48,6 +48,7 @@ imgPrd.addEventListener('click', (event)=>{
   });
   event.target.addEventListener('mouseleave',(ev)=>{
     event.target.style = `transform: translate(0px) scale(1);`;
+    event.target.removeEventListener('mousemove', c);
   });
   // event.target.style = `transform: translateX(0px) translateY(0px) scale(1);`;
 }
