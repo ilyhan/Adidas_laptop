@@ -36,6 +36,7 @@
   font-weight: 600;
   margin-top: 15px;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .product-price{
@@ -79,7 +80,6 @@
   width: 100%;
   height: 40px;
   outline: 0.5px solid rgba(0, 0, 0, 0.1);
-  background: white;
 }
 
 .size-selector button:hover{
@@ -89,4 +89,10 @@
 
 .btn-bag{
   margin-top: 50px;
+}
+
+.active-btn{
+  background-color: black;
+  height: 1000px;
+  color: white;
 }

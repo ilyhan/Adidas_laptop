@@ -9,10 +9,10 @@
 @import url("popular_sect.css");
 @import url("info_stories.css");
 @import url("footer.css");
-@import url("disabling_style.css");
 @import url("favorite.css");
 @import url("product.css");
 @import url("basket-style.css");
+@import url("disabling_style.css");
 
 
 a:hover{

@@ -1,8 +1,12 @@
 .none_block{
-  display: none;
+  display: none; 
 }
 
 .none{
   top:-100px;
   transition: 0.6s ease;
+}
+
+.maybe-error{
+  color: red;
 }
